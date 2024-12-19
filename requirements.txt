@@ -14,6 +14,7 @@ multidict==6.1.0
 propcache==0.2.1
 python-dateutil==2.9.0.post0
 pyzmq==26.2.0
+scikit-learn
 setuptools==75.6.0
 six==1.17.0
 urllib3==2.2.3
