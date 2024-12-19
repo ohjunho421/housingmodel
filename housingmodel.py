@@ -4,11 +4,17 @@ import joblib
 
 # Load model
 model_path = "gradient_boosting_model.pkl"
+
 try:
-    model = joblib.load(model_path)
+    # 모델 로드 시도
+    model = joblib.load("gradient_boosting_model.pkl", mmap_mode=None)
+    print("Model loaded successfully!")
 except FileNotFoundError:
-    st.error("모델 파일이 없습니다. 'gradient_boosting_model.pkl'이 올바르게 업로드되었는지 확인하세요.")
-    st.stop()
+    # 파일이 없는 경우 처리
+    print("Model file 'gradient_boosting_model.pkl' not found! Ensure it is uploaded correctly.")
+except Exception as e:
+    # 다른 예외 처리
+    print(f"An error occurred while loading the model: {e}")
 
 # Streamlit app
 st.title("주택 가격 예측 모델")
