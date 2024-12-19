@@ -8,14 +8,16 @@ frozenlist==1.5.0
 greenlet==3.1.1
 idna==3.10
 jmespath==1.0.1
+joblib==1.3.2  # joblib 추가
 llvmlite==0.43.0
 multidict==6.1.0
 propcache==0.2.1
 python-dateutil==2.9.0.post0
 pyzmq==26.2.0
-scikit-learn==1.3.0  # scikit-learn 추가
+scikit-learn==1.3.0  # scikit-learn 유지
 setuptools==75.6.0
 six==1.17.0
+streamlit==1.26.0  # streamlit 추가
 urllib3==2.2.3
 wheel==0.45.1
 yarl==1.18.3
